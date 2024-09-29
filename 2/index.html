@@ -5,18 +5,50 @@
         <title>テストページ</title>
     </head>
     <body>
-        <h1>Hello</h1>
+        <header>
+            <h1>永野芽郁愛好会</h1>
 
-        <!-- NOTE: pタグは文章の段落を表す -->
-        <p>体に優しい</p>
-        <p>おいしいブレンドコーヒー</p>
-
-        <a href="https://www.instagram.com/mei_nagano0924official/?hl=ja" target="_blank">Instagram</a>
-
-        <!-- NOTE: メールアドレス宛リンク -->
-        <a href="mailto:superd0sa2020@gmail.com">お問い合わせ</a>
-
+            <!-- NOTE: pタグは文章の段落を表す -->
+            <p>このサイトは女優、永野芽郁を応援するサイトです。</p>
+            <nav>
+                <ul>
+                    <li>サービス紹介</li>
+                    <li>料金</li>
+                </ul>
+            </nav>
+        </header>
         <hr>
+        <main>
+            <!-- NOTE: 読み物、記事の部分を作る -->
+            <article>
+                <h2>記事タイトル</h2>
+                <ul>
+                    <li><a href="#">永野芽郁、菅原達也と熱愛中？</a></li>
+                    <li><a href="#">永野芽郁、菅原達也とお泊まりデートか？</a></li>
+                </ul>
+            </article>
+            <hr>
+
+            <!-- NOTE: テーマを持ったグループを作る -->
+            <section>
+                <h2>その他おすすめの記事</h2>
+                <ul>
+                    <li><a href="#">永野芽郁、菅原達也と熱愛中？</a></li>
+                    <li><a href="#">永野芽郁、菅原達也とお泊まりデートか？</a></li>
+                </ul>
+            </section>
+            <hr>
+        </main>
+
+        <!-- NOTE: 本文ではない補足情報 -->
+        <aside>
+            <a href="https://www.instagram.com/mei_nagano0924official/?hl=ja" target="_blank">Instagram</a>
+
+            <!-- NOTE: メールアドレス宛リンク -->
+            <a href="mailto:superd0sa2020@gmail.com">お問い合わせ</a>
+        </aside>
+        <hr>
+
         <ul>
             <li>卵</li>
             <li>醤油</li>
@@ -51,6 +83,7 @@
             <input type="tel" placeholder="tel">
             <input type="url" placeholder="url">
 
+            <!-- NOTE: divタグは意味を持たない部分をまとめる -->
             <div>
                 <input type="radio" name="gender" value="男"> 男
                 <input type="radio" name="gender" value="女" checked> 女
@@ -58,7 +91,9 @@
             </div>
 
             <div>
-                <input type="checkbox" name="color" value="赤"> 赤
+                <!-- NOTE: for と id 関連付ける -->
+                <input type="checkbox" name="color" value="赤" id="red">
+                <label for="red">赤</label>
                 <input type="checkbox" name="color" value="青" checked> 青
                 <input type="checkbox" name="color" value="黄"> 黄
             </div>
