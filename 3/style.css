@@ -41,3 +41,18 @@ ul {
     list-style-type: disc;
     /* list-style-image: url(img/mei_2.jpg); */
 }
+
+.container {
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    /* NOTE: 垂直方向の揃え */
+    align-items: center;
+}
+
+.item {
+    background-color: #0bd;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
