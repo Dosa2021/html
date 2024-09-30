@@ -1,8 +1,36 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.page-header {
+    padding-top: .5rem;
+}
+.logo {
+    width: 210px;
+}
+
 #mei {
     background-image: url(../images/mei_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 250px;
     padding-right: 15px;
 }
 
@@ -12,11 +40,11 @@ h1, h2, p {
 }
 h1 {
     color: #0bd;
-    font-size: 30px;
-    line-height: 100px;
+    font-size: 15px;
+    line-height: 50px;
 }
 p {
-    font-size: 13px;
+    font-size: 6px;
     color:  rgba(10, 130, 165, 0.5);
 }
 
