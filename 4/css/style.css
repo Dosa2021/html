@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.page-header {
+    padding-top: .5rem;
+}
+.logo {
+    width: 210px;
+}
+
+#mei {
+    background-image: url(../images/mei_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    padding-right: 15px;
+}
+
+h1, h2, p {
+    text-align: right;
+    font-family: serif;
+}
+h1 {
+    color: #0bd;
+    font-size: 15px;
+    line-height: 50px;
+}
+p {
+    font-size: 6px;
+    color:  rgba(10, 130, 165, 0.5);
+}
+
+#mei_main {
+    margin: 10px;
+}
+#mei_main > h2 {
+    text-align: center;
+    line-height: 300px;
+    border-bottom: 1px solid #ddd;
+}
+#mei_main > ul {
+    text-align: center;
+}
+#mei_main li {
+    line-height: 50px;
+}
+#mei_main a {
+    color: #000;
+}
+
