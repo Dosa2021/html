@@ -24,6 +24,12 @@ img {
     height: 800px;
 }
 
+/* レイアウト */
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
 .align-center {
     text-align: center;
 }
@@ -54,10 +60,12 @@ img {
     border-radius: 8px;
     padding: .75rem 1.5rem;
     /* NOTE: 動きをつける */
-    transform: .5s;
+    transition-duration: 500ms;
+    transition-property: background-color, scale;
 }
 .btn:hover {
     background-color: #0090aa;
+    scale: 1.1;
 }
 
 .page-header {
@@ -168,3 +176,37 @@ p {
     color: #000;
 }
 
+/* 800px以上に適用されるCSS（PC用） */
+@media (min-width: 600px) {
+    /* 見出し */
+    .page-title {
+        font-size: 5rem;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+
+    /* HOME */
+    .cover-home {
+        background-image: url(../images/cover-home-l.webp);
+    }
+
+    /* ヘッダー */
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    /* フッター */
+    .page-footer {
+        background-image: url(../images/footer-l.webp);
+        padding-top: 12rem;
+    }
+    .indfo th {
+        padding-left: 2.5rem;
+    }
+}
