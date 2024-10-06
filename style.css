@@ -1,0 +1,72 @@
+#mei {
+    background-image: url(img/mei_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    padding-right: 15px;
+}
+
+h1, h2, p {
+    text-align: right;
+    font-family: serif;
+}
+h1 {
+    color: #0bd;
+    font-size: 15px;
+    line-height: 50px;
+}
+p {
+    font-size: 6px;
+    color:  rgba(10, 130, 165, 0.5);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+#mei_main {
+    padding: 50px 0px;
+}
+#mei_main > h2 {
+    text-align: center;
+    line-height: 300px;
+    border-bottom: 1px solid #ddd;
+}
+#mei_main > ul {
+    text-align: center;
+}
+#mei_main li {
+    line-height: 50px;
+}
+#mei_main a {
+    display: block;
+    background-color: #0bd;
+    color: #fff;
+    margin: auto;
+    width: 125px;
+    border-radius: 8px;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 5px 0px;
+}
+footer small {
+    color: #0000008f;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+    #mei {
+        background-image: url(img/mei_2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 750px;
+        padding-right: 15px;
+    }
+}

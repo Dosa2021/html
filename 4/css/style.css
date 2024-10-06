@@ -15,8 +15,57 @@ img {
     max-width: 100%;
 }
 
+.cover-home {
+    background-image: url(../images/cover-home-s.webp);
+}
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+
+/* レイアウト */
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
 .align-center {
     text-align: center;
+}
+
+/* 見出し */
+.font-english {
+    font-family: "Philosopher", sans-serif;
+    font-weight: normal;
+}
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1,4;
+}
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    /* NOTE: 動きをつける */
+    transition-duration: 500ms;
+    transition-property: background-color, scale;
+}
+.btn:hover {
+    background-color: #0090aa;
+    scale: 1.1;
 }
 
 .page-header {
@@ -25,6 +74,67 @@ img {
 .logo {
     width: 210px;
 }
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.about {
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+}
+.about p {
+    color: #432;
+    font-size: 16px;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+/* フッター */
+.page-footer {
+    background-image: url(../images/footer-s.webp);
+    background-size: cover;
+    background-position: center;
+    padding-top: 12rem;
+}
+
+.info {
+    margin: auto;
+    width: 100%;
+    max-width: 544px;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+.indfo th, .info td {
+    border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+.info td {
+    padding: 1rem 0;
+}
+.copyright {
+    background-color: #432;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+
+}
+
 
 #mei {
     background-image: url(../images/mei_2.jpg);
@@ -66,3 +176,37 @@ p {
     color: #000;
 }
 
+/* 800px以上に適用されるCSS（PC用） */
+@media (min-width: 600px) {
+    /* 見出し */
+    .page-title {
+        font-size: 5rem;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+
+    /* HOME */
+    .cover-home {
+        background-image: url(../images/cover-home-l.webp);
+    }
+
+    /* ヘッダー */
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    /* フッター */
+    .page-footer {
+        background-image: url(../images/footer-l.webp);
+        padding-top: 12rem;
+    }
+    .indfo th {
+        padding-left: 2.5rem;
+    }
+}
